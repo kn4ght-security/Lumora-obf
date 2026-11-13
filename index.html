@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumora Numerical VM Obfuscator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <div class="container">
+        <header>
+            <h1>Spx <span>Numerical</span> VM</h1>
+            <p class="subtitle">Luau Obfuscator • ~1MB Numerical VM • Numbers Only</p>
+        </header>
+
+        <div class="editor-grid">
+            <div class="panel input-panel">
+                <div class="panel-header">
+                    <span class="dot"></span>
+                    Input Luau
+                </div>
+                <textarea id="input" placeholder="Paste your Roblox Luau script here..." spellcheck="false"></textarea>
+            </div>
+
+            <div class="panel output-panel">
+                <div class="panel-header">
+                    <span class="dot out"></span>
+                    Obfuscated Output
+                </div>
+                <textarea id="output" readonly placeholder="Obfuscated numerical VM code will appear here..." spellcheck="false"></textarea>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button id="obfuscate" class="obfuscate-btn">
+                <span class="btn-text">Obfuscate</span>
+                <span class="btn-glow"></span>
+            </button>
+        </div>
+
+        <footer>
+            <p>Numerical numbers payload only • ~1MB bloat • Made for Roblox</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
